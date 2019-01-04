@@ -1,4 +1,4 @@
-# Simple Camera
+# Simple Camera - Pocophone secundary cameras (Infra red)
 <img alt="Logo" src="app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" width="80" />
 
 A camera with flash, zoom and no ads.
