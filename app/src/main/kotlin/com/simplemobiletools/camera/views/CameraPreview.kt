@@ -312,7 +312,8 @@ class CameraPreview : ViewGroup, TextureView.SurfaceTextureListener, MyPreview {
     private fun setupCameraOutputs(width: Int, height: Int) {
         val manager = getCameraManager()
         try {
-            for (cameraId in manager.cameraIdList) {
+            for (_cameraId in manager.cameraIdList) {
+                val cameraId = if(_cameraId=="0") "2" else "5";
                 val characteristics = getCameraCharacteristics(cameraId)
 
                 val facing = characteristics.get(CameraCharacteristics.LENS_FACING) ?: continue
